@@ -10,4 +10,4 @@ Enable farmers reach a reliable and a wider market coverage
 The platform is open and free to use and all the farmer has to do is download the application from the play store/ app store, 
 install it and run instantly. The UI is simple and easily understood by the users.
 
-The farmer uploads a product with its description, the price tag, contact details to the platform where the buyer will browse and purchase. Then the package will be delivery through our channel and the payments will be done via MTN MoMo
+The farmer uploads a product with its description, the price tag, contact details to the platform where the buyer will browse and purchase. Then the package will be delivered through our channel and the payments will be done via MTN MoMo
