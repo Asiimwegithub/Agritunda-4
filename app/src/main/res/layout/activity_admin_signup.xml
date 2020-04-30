@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/admin_signup_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".admin.AdminSignupActivity">
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/tpLayout"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:gravity="center"
+                    android:text="AGRITUNDA"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center"
+                    android:text="Signup"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="16dp"
+                android:layout_below="@+id/tpLayout"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:id="@+id/email_login_form"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp"
+                    android:background="@color/bg_light"
+                    android:paddingTop="36dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="36dp">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/ad_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:hint="Name"
+                        android:inputType="textCapWords"
+                        android:textColorHint="@color/light_color"
+                        app:met_baseColor="@color/light_gray"
+                        android:textSize="18sp"
+                        app:met_clearButton="true"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelTextSize="12dp"
+                        app:met_iconLeft="@drawable/ic_person"
+                        app:met_iconPadding="0dp"
+                        app:met_primaryColor="@color/colorAccent" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/adm_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:hint="Phone number"
+                        android:inputType="phone"
+                        android:textColorHint="@color/light_color"
+                        app:met_baseColor="@color/light_gray"
+                        android:textSize="18sp"
+                        app:met_clearButton="true"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelTextSize="12dp"
+                        app:met_iconLeft="@drawable/ic_phone"
+                        app:met_iconPadding="0dp"
+                        app:met_primaryColor="@color/colorAccent" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/adm_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:textColorHint="@color/light_color"
+                        app:met_baseColor="@color/light_gray"
+                        android:textSize="18sp"
+                        app:met_clearButton="true"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelTextSize="12dp"
+                        app:met_iconLeft="@drawable/ic_lock"
+                        app:met_iconPadding="0dp"
+                        app:met_primaryColor="@color/colorAccent" />
+
+                    <mehdi.sakout.fancybuttons.FancyButton
+                        android:id="@+id/ad_signup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="10dp"
+                        fancy:fb_borderColor="@color/colorPrimaryDark"
+                        fancy:fb_borderWidth="1dp"
+                        fancy:fb_defaultColor="@color/colorPrimaryDark"
+                        fancy:fb_focusColor="@color/colorPrimaryDark"
+                        fancy:fb_iconPosition="left"
+                        fancy:fb_radius="4dp"
+                        fancy:fb_text="SIGNUP"
+                        fancy:fb_textColor="@android:color/white"
+                        fancy:fb_textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Already a member?"
+                            android:textColor="@color/light_gray"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_ad_Login"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:text="Login"
+                            android:textColor="@color/light_color"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

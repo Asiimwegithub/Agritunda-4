@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/admin_nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/admin_nav_orders"
+            android:icon="@drawable/ic_orders"
+            android:title="Orders Requests" />
+
+        <item
+            android:id="@+id/admin_nav_cart"
+            android:icon="@drawable/ic_cart"
+            android:title="Your Cart" />
+
+        <item
+            android:id="@+id/admin_nav_distributors"
+            android:icon="@drawable/ic_add_person"
+            android:title="Add Distributors" />
+        <item
+            android:id="@+id/admin_nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings" />
+    </group>
+
+    <item android:title="Exit">
+        <menu>
+            <item
+                android:id="@+id/admin_nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="Logout" />
+
+        </menu>
+    </item>
+
+</menu>

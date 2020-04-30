@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#751037</color>
+    <color name="colorPrimaryDark">#5E0024</color>
+    <color name="colorAccent">#ff8426</color>
+    <color name="light_color">#e9e7e8</color>
+    <color name="bg_light">#87123f</color>
+    <color name="bg_lighter">#BC3A6C</color>
+    <color name="light_gray">#b9b7bb</color>
+
+
+    <color name="btnSignup">#39796a</color>
+    <color name="btnSignIn">#99d440</color>
+
+    <color name="appBarOver">#e6ffee</color>
+    <color name="appBarOverlay">#145c56</color>
+    <color name="green">#00ff00</color>
+    <color name="red">#fc4019</color>
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "538155556372",
+    "firebase_url": "https://agritunda.firebaseio.com",
+    "project_id": "agritunda",
+    "storage_bucket": "agritunda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:538155556372:android:5d08d7a570b8900b5b9101",
+        "android_client_info": {
+          "package_name": "com.mcdenny.agritunda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "538155556372-fvh5a3n1u2oug3nt26h00mbg85anrjt6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mcdenny.agritunda",
+            "certificate_hash": "05108368d28ee56cd45242e04e2e60a511653323"
+          }
+        },
+        {
+          "client_id": "538155556372-mdahv4akke93jdut48rbel2ionh3a754.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIKDofbghXUMb9O8PCQUMrZCiX9g6dzhY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "538155556372-mdahv4akke93jdut48rbel2ionh3a754.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

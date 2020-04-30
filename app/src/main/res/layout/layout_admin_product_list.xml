@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="4dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="2dp"
+    android:layout_marginBottom="2dp"
+    android:layout_marginTop="6dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:outlineProvider="background">
+
+        <LinearLayout
+            android:id="@+id/icon_delete"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="vertical">
+            <Button
+                android:layout_gravity="end"
+                android:layout_marginEnd="16dp"
+                android:id="@+id/admin_delete_product"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:background="@drawable/ic_delete_trash"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_below="@+id/icon_delete"
+            android:id="@+id/admin_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/easy" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:id="@+id/ad_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_lighter"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Product name"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/admin_item_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_lighter"
+                android:gravity="center"
+                android:text="Price"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+

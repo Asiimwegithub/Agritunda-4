@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/add_distributor_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Distributor Name*"
+            android:inputType="textCapWords"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="20sp"
+            app:met_floatingLabelTextSize="14dp"
+            app:met_iconLeft="@drawable/ic_person"
+            app:met_iconPadding="0dp"
+            app:met_baseColor="@color/colorPrimaryDark"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="50"
+            app:met_primaryColor="@color/colorPrimaryDark"
+            app:met_singleLineEllipsis="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/add_distributor_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Distributor Phone*"
+            android:inputType="phone"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="20sp"
+            app:met_floatingLabelTextSize="14dp"
+            app:met_iconLeft="@drawable/ic_phone"
+            app:met_iconPadding="0dp"
+            app:met_baseColor="@color/colorPrimaryDark"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="50"
+            app:met_primaryColor="@color/colorPrimaryDark"
+            app:met_singleLineEllipsis="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/add_distributor_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Distributor Email*"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="20sp"
+            app:met_floatingLabelTextSize="14dp"
+            app:met_iconLeft="@drawable/ic_mail"
+            app:met_iconPadding="0dp"
+            app:met_baseColor="@color/colorPrimaryDark"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="50"
+            app:met_primaryColor="@color/colorPrimaryDark"
+            app:met_singleLineEllipsis="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/add_distributor_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Distributor Address*"
+            android:inputType="textCapWords"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="20sp"
+            app:met_floatingLabelTextSize="14dp"
+            app:met_iconLeft="@drawable/ic_location"
+            app:met_iconPadding="0dp"
+            app:met_baseColor="@color/colorPrimaryDark"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="50"
+            app:met_primaryColor="@color/colorPrimaryDark"
+            app:met_singleLineEllipsis="true"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:layout_weight="2"
+                android:id="@+id/select_distributor_image"
+                android:layout_width="0dp"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="5dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:background="@drawable/ic_menu_camera" />
+
+            <TextView
+                android:id="@+id/img_distri_selected"
+                android:layout_weight="8"
+                android:layout_width="0dp"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:text="No image selected"
+                android:textSize="16sp"
+                android:textColor="@color/red"
+                android:textStyle="italic"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

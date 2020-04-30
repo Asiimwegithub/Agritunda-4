@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/add_category_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Category Name*"
+            android:inputType="textCapWords"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="20sp"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelTextSize="14dp"
+            app:met_iconPadding="0dp"
+            app:met_maxCharacters="50"
+            app:met_primaryColor="@color/colorPrimaryDark"
+            app:met_singleLineEllipsis="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <Button
+                android:id="@+id/select_image"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="2"
+                android:background="@drawable/ic_menu_camera"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/img_cat_selected"
+                android:layout_weight="8"
+                android:layout_width="0dp"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:text="No image selected"
+                android:textSize="16sp"
+                android:textColor="@color/red"
+                android:textStyle="italic"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
